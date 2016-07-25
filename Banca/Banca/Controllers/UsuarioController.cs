@@ -15,5 +15,10 @@ namespace Banca.Controllers
         {
             return View();
         }
+
+        public ActionResult Autenticarse(string usuario, string password)
+        {
+            return View();
+        }
     }
 }

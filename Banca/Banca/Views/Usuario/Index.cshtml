@@ -1,0 +1,45 @@
+﻿@model Banca.Models.Usuario
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h4>Usuario</h4>
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.nombre)
+            </dt>
+            <dt>
+                <input id="idUsuario" type="text" />
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.nombre)
+            </dd>
+    
+            <dt>
+                @Html.DisplayNameFor(model => model.password)
+            </dt>
+            <dt>
+                <input id="idPassword" type="password" />
+            </dt>
+            <dd>
+                @Html.DisplayFor(model => model.password)
+            </dd>
+    
+        </dl>
+    </div>
+    <p>
+        <input id="idLoguearse" type="button" value="Login" />      
+    </p>
+</body>
+</html>
